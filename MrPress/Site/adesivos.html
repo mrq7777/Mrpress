@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5K5XDQKLZ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J5K5XDQKLZ');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Adesivos personalizados em vinil e papel na Barra da Tijuca. Etiquetas, rótulos, vitrines, paredes, veículos. Recorte eletrônico e grandes formatos. Mr.">
+<meta name="keywords" content="adesivos personalizados barra da tijuca, adesivos vinil, etiquetas personalizadas, rótulos adesivos, adesivos para vitrine, adesivos recorte eletrônico, gráfica barra da tijuca">
+<meta property="og:title" content="Adesivos Personalizados — Mr.Press Gráfica na Barra da Tijuca">
+<meta property="og:description" content="Adesivos que grudam na memória. Vinil, papel, recorte eletrônico e grandes formatos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mrpress.com.br/adesivos/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://mrpress.com.br/adesivos.html">
+<title>Adesivos Personalizados — Mr.Press | Gráfica na Barra da Tijuca</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --gray-50: #f8f8f8;
+  --gray-100: #f0f0f0;
+  --gray-200: #e2e2e2;
+  --gray-400: #9a9a9a;
+  --gray-600: #555;
+  --red: #CC0000;
+  --red-dark: #a30000;
+  --red-glow: rgba(204,0,0,0.15);
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --r-sm: 8px; --r-md: 14px; --r-lg: 22px; --r-xl: 32px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.10);
+  --shadow-lg: 0 24px 64px rgba(0,0,0,0.14);
+  --ease: cubic-bezier(0.16,1,0.3,1);
+  --t: 0.4s var(--ease);
+  --tf: 0.2s var(--ease);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);background:var(--white);color:var(--black);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+
+/* ── Utilities ── */
+.container{max-width:1280px;margin:0 auto;padding:0 40px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+.tag::before{content:'';width:22px;height:2px;background:var(--red);display:block}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:100px;font-family:var(--font-body);font-size:14px;font-weight:600;cursor:pointer;border:none;transition:var(--t);white-space:nowrap}
+.btn-red{background:var(--red);color:var(--white)}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 12px 32px rgba(204,0,0,.3)}
+.btn-ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.3)}
+.btn-ghost:hover{border-color:var(--white);background:rgba(255,255,255,.08);transform:translateY(-2px)}
+.section-title{font-family:var(--font-display);font-weight:800;line-height:1.05;letter-spacing:-0.03em}
+.section-title.light{color:var(--white)}
+.section-title.dark{color:var(--black)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* ── NAV ── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 0;transition:background .4s,padding .4s,box-shadow .4s}
+#nav.scrolled{background:rgba(255,255,255,.94);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 rgba(0,0,0,.08);padding:14px 0}
+#nav.scrolled .nav-logo{color:var(--black)}
+#nav.scrolled .nav-links a{color:#FF8C00}
+#nav.scrolled .nav-links a:hover{color:var(--red);transform:translateY(-2px);text-shadow:0 4px 12px rgba(204,0,0,.2)}
+#nav.scrolled .nav-cta{background:var(--red);color:var(--white);border-color:var(--red)}
+#nav.scrolled .nav-toggle span{background:var(--black)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav-logo{font-family:var(--font-display);font-size:28px;font-weight:800;color:var(--white);letter-spacing:-0.02em;transition:color .4s}
+.nav-logo span{color:var(--red)}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,.75);transition:color var(--tf);letter-spacing:.01em}
+.nav-links a:hover{color:var(--white)}
+.nav-cta{padding:10px 22px;border-radius:100px;font-size:13px;font-weight:600;color:var(--white);border:1.5px solid rgba(255,255,255,.35);background:transparent;cursor:pointer;transition:var(--t);font-family:var(--font-body)}
+.nav-cta:hover{background:var(--red);border-color:var(--red)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-toggle span{width:24px;height:2px;background:var(--white);border-radius:2px;transition:var(--t)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;background:var(--black);position:relative;display:flex;align-items:flex-end;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(to bottom,transparent 0%,black 25%,black 75%,transparent 100%)}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
+.hero-orb-1{width:700px;height:700px;background:radial-gradient(circle,rgba(204,0,0,.28) 0%,transparent 70%);top:-250px;right:-150px;animation:float 9s ease-in-out infinite}
+.hero-orb-2{width:320px;height:320px;background:radial-gradient(circle,rgba(204,0,0,.12) 0%,transparent 70%);bottom:80px;left:8%;animation:float 12s ease-in-out infinite reverse}
+@keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-28px) scale(1.04)}}
+.hero-content{position:relative;z-index:2;padding:160px 0 100px;width:100%}
+.hero-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(204,0,0,.1);border:1px solid rgba(204,0,0,.28);border-radius:100px;padding:7px 18px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#ff7777;margin-bottom:34px}
+.hero-pill::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--red);animation:blink 2.2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+.hero-h1{font-family:var(--font-display);font-size:clamp(36px,5vw,72px);font-weight:800;line-height:.98;letter-spacing:-0.035em;color:var(--white);max-width:860px;margin-bottom:30px}
+.hero-h1 .accent{color:var(--red)}
+.hero-sub{font-size:clamp(16px,1.5vw,19px);color:rgba(255,255,255,.5);max-width:540px;line-height:1.65;margin-bottom:50px;font-weight:400}
+.hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.hero-trust{display:flex;align-items:center;gap:12px;margin-top:56px;flex-wrap:wrap}
+.trust-badge{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:100px;padding:8px 16px;font-size:12px;color:rgba(255,255,255,.55);font-weight:500}
+.trust-dot{width:6px;height:6px;border-radius:50%;background:#25D366}
+.scroll-hint{position:absolute;bottom:38px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.25);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.scroll-bar{width:1px;height:52px;background:linear-gradient(to bottom,rgba(255,255,255,.3),transparent);animation:scrollAnim 2.2s ease-in-out infinite}
+@keyframes scrollAnim{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ── CLIENTS ── */
+#clients{background:var(--gray-50);padding:52px 0;border-top:1px solid var(--gray-100);border-bottom:1px solid var(--gray-100);overflow:hidden}
+.clients-lbl{text-align:center;font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gray-400);margin-bottom:30px}
+.clients-track{display:flex;gap:64px;align-items:center;animation:marquee 26s linear infinite;width:max-content}
+.clients-track:hover{animation-play-state:paused}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.c-logo{font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--gray-200);white-space:nowrap;letter-spacing:-.01em;transition:color var(--tf);user-select:none}
+.c-logo.c-star{color:var(--red);font-size:16px}
+.c-logo:hover{color:var(--gray-400)}
+.c-logo.c-star:hover{color:var(--red-dark)}
+
+/* ── DETAILS (cards materiais) ── */
+#details{padding:140px 0;background:var(--white)}
+.details-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:60px}
+.detail-card{border:1px solid var(--gray-100);border-radius:var(--r-lg);padding:38px;transition:var(--t);position:relative;overflow:hidden}
+.detail-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transition:transform var(--t);transform-origin:left}
+.detail-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px)}
+.detail-card:hover::after{transform:scaleX(1)}
+.detail-icon{width:50px;height:50px;border-radius:var(--r-md);background:rgba(204,0,0,.08);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:22px}
+.detail-card h3{font-family:var(--font-display);font-size:19px;font-weight:700;margin-bottom:10px;color:var(--black)}
+.detail-card p{font-size:14px;color:var(--gray-400);line-height:1.65}
+.detail-card .detail-tag{display:inline-block;margin-top:14px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--red);background:rgba(204,0,0,.06);padding:4px 12px;border-radius:100px}
+
+/* ── WHY ── */
+#why{padding:140px 0;background:var(--black)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:60px}
+.why-card{border:1px solid rgba(255,255,255,.07);border-radius:var(--r-lg);padding:38px;transition:var(--t);position:relative;overflow:hidden;background:#111}
+.why-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transition:transform var(--t);transform-origin:left}
+.why-card:hover{box-shadow:0 8px 32px rgba(204,0,0,.1);transform:translateY(-4px)}
+.why-card:hover::after{transform:scaleX(1)}
+.why-icon{width:50px;height:50px;border-radius:var(--r-md);background:rgba(204,0,0,.1);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:22px}
+.why-card h3{font-family:var(--font-display);font-size:19px;font-weight:700;margin-bottom:10px;color:var(--white)}
+.why-card p{font-size:14px;color:rgba(255,255,255,.4);line-height:1.65}
+
+/* ── APPLICATIONS ── */
+#applications{padding:120px 0;background:var(--gray-50)}
+.apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px}
+.app-item{background:var(--white);padding:40px 34px;position:relative;overflow:hidden;transition:var(--t)}
+.app-item::before{content:'';position:absolute;inset:0;background:var(--red);opacity:0;transition:opacity var(--t)}
+.app-item:hover::before{opacity:.04}
+.app-item:hover{transform:scale(1.01);z-index:2}
+.apps-grid .app-item:nth-child(1){border-radius:var(--r-lg) 0 0 0}
+.apps-grid .app-item:nth-child(3){border-radius:0 var(--r-lg) 0 0}
+.apps-grid .app-item:nth-child(4){border-radius:0 0 0 var(--r-lg)}
+.apps-grid .app-item:nth-child(6){border-radius:0 0 var(--r-lg) 0}
+.app-icon{font-size:36px;margin-bottom:18px;display:block;position:relative;transition:transform .4s var(--ease)}
+.app-item:hover .app-icon{transform:scale(1.15) translateY(-4px)}
+.app-item h3{font-family:var(--font-display);font-size:18px;font-weight:700;margin-bottom:8px;color:var(--black);position:relative}
+.app-item p{font-size:13px;color:var(--gray-400);line-height:1.6;position:relative}
+
+/* ── SPECS ── */
+#specs{padding:100px 0;background:var(--white)}
+.specs-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.specs-visual{border-radius:var(--r-xl);overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,#1a0000,#2d0000);display:flex;align-items:center;justify-content:center;position:relative}
+.specs-visual-inner{font-family:var(--font-display);font-size:80px;font-weight:800;color:rgba(255,255,255,.04);letter-spacing:-.05em}
+.specs-visual .spec-badge{position:absolute;background:var(--white);border-radius:var(--r-lg);padding:16px 22px;box-shadow:var(--shadow-lg);border:1px solid var(--gray-100)}
+.spec-badge-1{bottom:30px;left:30px}
+.spec-badge-2{top:30px;right:30px}
+.spec-badge .sb-num{font-family:var(--font-display);font-size:28px;font-weight:800;color:var(--black);line-height:1}
+.spec-badge .sb-num em{color:var(--red);font-style:normal}
+.spec-badge .sb-lbl{font-size:11px;color:var(--gray-400);margin-top:4px;font-weight:500}
+.specs-text .section-title{font-size:clamp(32px,3.5vw,48px);margin-bottom:22px}
+.specs-text p{font-size:16px;color:var(--gray-600);line-height:1.75;margin-bottom:20px}
+.specs-list{margin-top:28px;display:flex;flex-direction:column;gap:12px}
+.specs-list li{display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--gray-600);line-height:1.6}
+.specs-list li::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px}
+
+/* ── FAQ ── */
+#faq{padding:140px 0;background:var(--white)}
+.faq-list{max-width:760px;margin:60px auto 0}
+.faq-item{border-bottom:1px solid var(--gray-100)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;padding:26px 0;font-size:16px;font-weight:600;text-align:left;background:none;border:none;cursor:pointer;font-family:var(--font-body);color:var(--black);gap:24px;transition:color var(--tf)}
+.faq-q:hover{color:var(--red)}
+.faq-icon{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--gray-200);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;transition:var(--t);color:var(--gray-400)}
+.faq-item.open .faq-icon{background:var(--red);border-color:var(--red);color:var(--white);transform:rotate(45deg)}
+.faq-a{font-size:15px;color:var(--gray-600);line-height:1.75;max-height:0;overflow:hidden;transition:max-height .4s var(--ease),padding .3s}
+.faq-item.open .faq-a{max-height:260px;padding-bottom:26px}
+
+/* ── CTA ── */
+#cta{padding:120px 0;background:var(--black);position:relative;overflow:hidden}
+#cta::before{content:'';position:absolute;top:-220px;left:50%;transform:translateX(-50%);width:900px;height:900px;background:radial-gradient(circle,rgba(204,0,0,.18) 0%,transparent 60%);pointer-events:none}
+.cta-inner{text-align:center;position:relative}
+.cta-inner h2{font-family:var(--font-display);font-size:clamp(38px,5.5vw,78px);font-weight:800;letter-spacing:-.04em;line-height:1.0;color:var(--white);margin-bottom:22px}
+.cta-inner h2 .accent{color:var(--red)}
+.cta-inner p{font-size:18px;color:rgba(255,255,255,.45);max-width:480px;margin:0 auto 48px;line-height:1.6}
+.cta-actions{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:100px;background:#25D366;color:var(--white);font-size:14px;font-weight:600;text-decoration:none;transition:var(--t)}
+.btn-wa:hover{background:#1db954;transform:translateY(-2px);box-shadow:0 12px 32px rgba(37,211,102,.3)}
+
+/* ── FOOTER ── */
+#footer{background:#060606;padding:80px 0 40px;border-top:1px solid rgba(255,255,255,.06)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:56px;margin-bottom:60px}
+.footer-logo{font-family:var(--font-display);font-size:24px;font-weight:800;color:var(--white);letter-spacing:-.02em;display:inline-block;margin-bottom:14px}
+.footer-logo span{color:var(--red)}
+.footer-desc{font-size:14px;color:rgba(255,255,255,.32);line-height:1.72;max-width:280px}
+.footer-socials{display:flex;gap:10px;margin-top:22px}
+.soc-link{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);font-size:14px;transition:var(--tf);text-decoration:none}
+.soc-link:hover{border-color:var(--red);background:rgba(204,0,0,.1);color:var(--red)}
+.footer-col h5{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:18px}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul li a{font-size:14px;color:rgba(255,255,255,.48);transition:color var(--tf)}
+.footer-col ul li a:hover{color:var(--white)}
+.fct{display:flex;align-items:flex-start;gap:10px;margin-bottom:14px}
+.fct-icon{flex-shrink:0;width:18px;height:18px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.fct span{font-size:14px;color:rgba(255,255,255,.48);line-height:1.5}
+.fct a{font-size:14px;color:rgba(255,255,255,.48);transition:color var(--tf)}
+.fct a:hover{color:var(--white)}
+.open-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.2);border-radius:100px;padding:5px 13px;font-size:12px;color:#25D366;font-weight:600;margin-top:14px}
+.open-dot{width:6px;height:6px;border-radius:50%;background:#25D366}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:30px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.22)}
+
+/* ── WA FLOAT ── */
+#wa-widget{position:fixed;bottom:28px;right:28px;z-index:1000;font-family:var(--font-body)}
+.wa-btn{position:relative;width:60px;height:60px;border-radius:50%;background:#25D366;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(37,211,102,.45);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.wa-btn:hover{transform:scale(1.1);box-shadow:0 12px 40px rgba(37,211,102,.55)}
+.wa-btn-icon{display:flex;align-items:center;justify-content:center}
+.wa-btn-tip{position:absolute;right:72px;background:var(--black);color:var(--white);padding:8px 14px;border-radius:10px;font-size:13px;font-weight:600;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;box-shadow:var(--shadow-md)}
+.wa-btn-tip::after{content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);border:6px solid transparent;border-right:none;border-left-color:var(--black)}
+.wa-btn:hover .wa-btn-tip{opacity:1}
+.wa-notification{position:absolute;top:-4px;right:-4px;width:20px;height:20px;border-radius:50%;background:var(--red);color:var(--white);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;border:2px solid var(--white);animation:notifPulse 2s ease-in-out infinite}
+@keyframes notifPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+.wa-box{position:absolute;bottom:76px;right:0;width:340px;background:var(--white);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.2);overflow:hidden;transform:scale(0.85) translateY(20px);transform-origin:bottom right;opacity:0;pointer-events:none;transition:transform .35s var(--ease),opacity .35s var(--ease)}
+.wa-box.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all}
+.wa-header{background:#075E54;padding:16px 18px;display:flex;align-items:center;justify-content:space-between}
+.wa-header-left{display:flex;align-items:center;gap:12px}
+.wa-avatar{width:42px;height:42px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.wa-name{font-size:15px;font-weight:700;color:var(--white)}
+.wa-status{font-size:12px;color:rgba(255,255,255,.7);display:flex;align-items:center;gap:5px;margin-top:2px}
+.wa-online-dot{width:7px;height:7px;border-radius:50%;background:#25D366;animation:blink 2s ease-in-out infinite}
+.wa-close{background:none;border:none;color:rgba(255,255,255,.7);font-size:16px;cursor:pointer;padding:4px;line-height:1;transition:color .2s}
+.wa-close:hover{color:var(--white)}
+.wa-body{background:#ECE5DD;padding:16px;min-height:180px;max-height:260px;overflow-y:auto}
+.wa-time{text-align:center;font-size:11px;color:rgba(0,0,0,.4);background:rgba(255,255,255,.6);border-radius:8px;padding:3px 10px;display:inline-block;margin:0 auto 12px;display:flex;justify-content:center}
+.wa-bubble{background:var(--white);border-radius:0 12px 12px 12px;padding:12px 14px;max-width:85%;box-shadow:0 1px 2px rgba(0,0,0,.1);position:relative}
+.wa-bubble p{font-size:14px;color:#333;line-height:1.5;margin-bottom:4px}
+.wa-bubble p:last-of-type{margin-bottom:0}
+.wa-bubble-time{font-size:11px;color:rgba(0,0,0,.4);float:right;margin-top:4px;margin-left:8px}
+.wa-suggestions{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+.wa-suggest{background:var(--white);border:1.5px solid #25D366;border-radius:20px;padding:9px 14px;font-size:13px;font-weight:500;color:#075E54;cursor:pointer;text-align:left;transition:background .2s,color .2s;font-family:var(--font-body)}
+.wa-suggest:hover{background:#25D366;color:var(--white)}
+.wa-footer{display:flex;align-items:center;gap:8px;padding:12px 14px;background:var(--white);border-top:1px solid var(--gray-100)}
+.wa-input{flex:1;border:1.5px solid var(--gray-200);border-radius:24px;padding:10px 16px;font-size:14px;font-family:var(--font-body);outline:none;transition:border-color .2s;color:var(--black)}
+.wa-input:focus{border-color:#25D366}
+.wa-send{width:40px;height:40px;border-radius:50%;background:#25D366;border:none;color:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;transition:background .2s,transform .2s}
+.wa-send:hover{background:#1db954;transform:scale(1.08)}
+
+/* ── SH ── */
+.sh{margin-bottom:60px}
+.sh.center{text-align:center}
+.sh .section-title{font-size:clamp(34px,4.5vw,60px)}
+.sh .section-sub{font-size:17px;color:var(--gray-400);margin-top:18px;max-width:500px;line-height:1.6}
+.sh.center .section-sub{margin-left:auto;margin-right:auto}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .details-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+  .apps-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .specs-inner{grid-template-columns:1fr;gap:48px}
+}
+@media(max-width:768px){
+  .container{padding:0 20px}
+  #details,#why,#applications,#specs,#faq{padding:80px 0}
+  #cta{padding:80px 0}
+  .details-grid,.why-grid{grid-template-columns:1fr}
+  .apps-grid{grid-template-columns:1fr}
+  .apps-grid .app-item:nth-child(1){border-radius:var(--r-lg) var(--r-lg) 0 0}
+  .apps-grid .app-item:nth-child(3){border-radius:0}
+  .apps-grid .app-item:nth-child(4){border-radius:0}
+  .apps-grid .app-item:nth-child(6){border-radius:0 0 var(--r-lg) var(--r-lg)}
+  .footer-grid{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .nav-links,.nav-cta{display:none}
+  .nav-toggle{display:flex}
+  .hero-h1{font-size:clamp(38px,11vw,58px)}
+}
+@media(max-width:400px){.wa-box{width:calc(100vw - 40px)}}
+
+@media(prefers-color-scheme:dark){
+  #details,#faq,#specs{background:#0f0f0f}
+  #clients{background:#111;border-color:rgba(255,255,255,.06)}
+  #applications{background:#111}
+  .section-title.dark,.detail-card h3,.app-item h3,.faq-q{color:var(--white)}
+  .detail-card{background:#141414;border-color:rgba(255,255,255,.07)}
+  .detail-card p,.app-item p{color:rgba(255,255,255,.4)}
+  .detail-card .detail-tag{background:rgba(204,0,0,.12)}
+  .app-item{background:#141414}
+  .faq-a{color:rgba(255,255,255,.5)}
+  .specs-text p,.specs-list li{color:rgba(255,255,255,.5)}
+  .spec-badge{background:#1a1a1a!important;border-color:rgba(255,255,255,.07)!important}
+  .spec-badge .sb-num{color:var(--white)}
+  body{background:#0a0a0a}
+  #nav.scrolled{background:rgba(10,10,10,.94)}
+  #nav.scrolled .nav-logo{color:var(--white)}
+  #nav.scrolled .nav-links a{color:rgba(255,255,255,.6)}
+  #nav.scrolled .nav-links a:hover{color:var(--white)}
+  #nav.scrolled .nav-toggle span{background:var(--white)}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="logo.svg" alt="Mr.Press" style="height:90px;width:auto"></a>
+      <div class="nav-links">
+        <a href="index.html#about">SOBRE</a>
+        <a href="index.html#services">SERVIÇOS</a>
+        <a href="index.html#why">DIFERENCIAIS</a>
+        <a href="index.html#testimonials">CLIENTES</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+      <a href="orcamento.html" class="nav-cta">Orçamento</a>
+      <div class="nav-toggle" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-pill">Adesivos Personalizados · Shopping Downtown · Barra da Tijuca</div>
+      <h1 class="hero-h1">Adesivos que grudam<br>na <span class="accent">memória.</span></h1>
+      <p class="hero-sub">Adesivos personalizados em vinil e papel para qualquer aplicação. Etiquetas, rótulos, vitrines, paredes e muito mais.</p>
+      <div class="hero-actions">
+        <a href="javascript:void(0)" onclick="toggleWaWidget()" class="btn btn-red">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar Orçamento
+        </a>
+        <a href="tel:+552139822777" class="btn btn-ghost">(21) 3982-2777</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-badge"><span class="trust-dot"></span> Desde 1985</div>
+        <div class="trust-badge">Vinil + Papel</div>
+        <div class="trust-badge">Recorte Eletrônico</div>
+        <div class="trust-badge">Grandes Formatos</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-bar"></div>Scroll</div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients">
+  <p class="clients-lbl">Empresas que confiam na Mr.Press</p>
+  <div style="overflow:hidden"><div class="clients-track">
+    <span class="c-logo c-star">NOVA VIDA</span><span class="c-logo">DOWNTOWN</span><span class="c-logo c-star">REDE GLOBO</span><span class="c-logo">SISTEX</span><span class="c-logo c-star">ARTEFACTO</span><span class="c-logo">RIO FASHION</span><span class="c-logo c-star">MAKAI</span><span class="c-logo">MULTENERGY</span><span class="c-logo c-star">MÓVEIS DO BEM</span><span class="c-logo">FLOWBARRY</span><span class="c-logo c-star">NOVA IGREJA</span><span class="c-logo">ESSENTIA ODONTO</span><span class="c-logo c-star">A FÓRMULA</span><span class="c-logo">ESPAÇO ÓTICO JS</span><span class="c-logo">BANGALÔ RESTAURANTES</span>
+    <span class="c-logo c-star">NOVA VIDA</span><span class="c-logo">DOWNTOWN</span><span class="c-logo c-star">REDE GLOBO</span><span class="c-logo">SISTEX</span><span class="c-logo c-star">ARTEFACTO</span><span class="c-logo">RIO FASHION</span><span class="c-logo c-star">MAKAI</span><span class="c-logo">MULTENERGY</span><span class="c-logo c-star">MÓVEIS DO BEM</span><span class="c-logo">FLOWBARRY</span><span class="c-logo c-star">NOVA IGREJA</span><span class="c-logo">ESSENTIA ODONTO</span><span class="c-logo c-star">A FÓRMULA</span><span class="c-logo">ESPAÇO ÓTICO JS</span><span class="c-logo">BANGALÔ RESTAURANTES</span>
+  </div></div>
+</section>
+
+<!-- DETAILS / MATERIAIS -->
+<section id="details">
+  <div class="container">
+    <div class="sh center">
+      <div class="tag">Materiais</div>
+      <h2 class="section-title dark reveal">Materiais para cada<br>necessidade.</h2>
+      <p class="sh section-sub reveal d1">Trabalhamos com vinil e papel de alta qualidade, com acabamentos que garantem durabilidade e impacto visual.</p>
+    </div>
+    <div class="details-grid">
+      <div class="detail-card reveal">
+        <div class="detail-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        </div>
+        <h3>Vinil Brilho</h3>
+        <p>Cores vibrantes com acabamento brilhante. Resistente a intempéries, ideal para uso externo, vitrines e veículos. Alta durabilidade.</p>
+        <span class="detail-tag">Uso externo</span>
+      </div>
+      <div class="detail-card reveal d1">
+        <div class="detail-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="15" y1="3" x2="15" y2="15"/></svg>
+        </div>
+        <h3>Vinil Fosco</h3>
+        <p>Acabamento elegante sem reflexo. Perfeito para ambientes internos sofisticados, sinalização e aplicações que exigem leitura sem brilho.</p>
+        <span class="detail-tag">Uso externo</span>
+      </div>
+      <div class="detail-card reveal d2">
+        <div class="detail-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Vinil Transparente</h3>
+        <p>Fundo cristalino que permite ver através do adesivo. Ideal para vitrines de lojas, vidros de escritórios e aplicações que precisam de transparência.</p>
+        <span class="detail-tag">Vitrines</span>
+      </div>
+      <div class="detail-card reveal d3">
+        <div class="detail-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h3>Papel Brilho</h3>
+        <p>Custo acessível com ótima qualidade de impressão. Indicado para etiquetas, rótulos de produtos e aplicações de uso interno com visual impactante.</p>
+        <span class="detail-tag">Uso interno</span>
+      </div>
+      <div class="detail-card reveal d4">
+        <div class="detail-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Papel Fosco</h3>
+        <p>Acabamento suave e sofisticado, sem reflexo. Excelente para etiquetas artesanais, rótulos gourmet e produtos que pedem um visual premium.</p>
+        <span class="detail-tag">Uso interno</span>
+      </div>
+      <div class="detail-card reveal d4">
+        <div class="detail-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Laminação Opcional</h3>
+        <p>Camada protetora extra contra riscos, UV e umidade. Aumenta significativamente a vida útil do adesivo em qualquer aplicação.</p>
+        <span class="detail-tag">Proteção extra</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section id="applications">
+  <div class="container">
+    <div class="sh center">
+      <div class="tag">Aplicações</div>
+      <h2 class="section-title dark reveal">De etiquetas a fachadas.<br>Sem limites.</h2>
+    </div>
+    <div class="apps-grid">
+      <div class="app-item reveal">
+        <span class="app-icon">🏷️</span>
+        <h3>Etiquetas e Rótulos</h3>
+        <p>Para produtos, embalagens, frascos e organização. Impressão de alta definição em qualquer formato.</p>
+      </div>
+      <div class="app-item reveal d1">
+        <span class="app-icon">🪟</span>
+        <h3>Vitrines</h3>
+        <p>Promoções, identidade visual e decoração de vitrines com adesivos em vinil transparente ou fosco.</p>
+      </div>
+      <div class="app-item reveal d2">
+        <span class="app-icon">🧱</span>
+        <h3>Paredes</h3>
+        <p>Ambientação de escritórios, lojas e espaços corporativos. Personalização completa do ambiente.</p>
+      </div>
+      <div class="app-item reveal d3">
+        <span class="app-icon">🚗</span>
+        <h3>Veículos</h3>
+        <p>Plotagem parcial ou total. Vinil de alta performance resistente a sol, chuva e lavagem.</p>
+      </div>
+      <div class="app-item reveal d4">
+        <span class="app-icon">🚶</span>
+        <h3>Pisos</h3>
+        <p>Adesivos antiderrapantes para sinalização de chão, direcionamento de fluxo e promoções de PDV.</p>
+      </div>
+      <div class="app-item reveal d4">
+        <span class="app-icon">✂️</span>
+        <h3>Recorte Eletrônico</h3>
+        <p>Formas personalizadas com precisão milimétrica. Qualquer contorno, logo ou silhueta recortada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECS -->
+<section id="specs">
+  <div class="container">
+    <div class="specs-inner">
+      <div class="specs-visual reveal">
+        <div class="specs-visual-inner">MR.P</div>
+        <div class="spec-badge spec-badge-1">
+          <div class="sb-num">32<em>x</em>48<em>cm</em></div>
+          <div class="sb-lbl">Tamanho máx. gráfica rápida</div>
+        </div>
+        <div class="spec-badge spec-badge-2">
+          <div class="sb-num"><em>∞</em></div>
+          <div class="sb-lbl">Plotter: sem limite de tamanho</div>
+        </div>
+      </div>
+      <div class="specs-text reveal d1">
+        <div class="tag">Especificações</div>
+        <h2 class="section-title dark">Do pequeno ao<br>gigante.</h2>
+        <p>Na gráfica rápida, produzimos adesivos de até 32x48cm com impressão digital de alta resolução. Para projetos maiores, nossa plotter de recorte e impressão atende qualquer dimensão.</p>
+        <ul class="specs-list">
+          <li>Impressão digital de alta resolução (até 1440 DPI)</li>
+          <li>Recorte eletrônico com precisão milimétrica</li>
+          <li>Grandes formatos via plotter (sem limite de tamanho)</li>
+          <li>Vinil resistente a intempéries para uso externo</li>
+          <li>Papel para uso interno com custo acessível</li>
+          <li>Laminação opcional para proteção contra UV e riscos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MR.PRESS -->
+<section id="why">
+  <div class="container">
+    <div class="sh center">
+      <div class="tag" style="color:#ff7777">Por que a Mr.Press</div>
+      <h2 class="section-title light reveal">Sua marca merece mais<br>do que impressão.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Produção Rápida</h3>
+        <p>Adesivos simples ficam prontos no mesmo dia. Projetos complexos em até 3 dias úteis.</p>
+      </div>
+      <div class="why-card reveal d1">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Qualidade Garantida</h3>
+        <p>Materiais de primeira linha e impressão de alta resolução. Cores fiéis ao original em cada tiragem.</p>
+      </div>
+      <div class="why-card reveal d2">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Atendimento Consultivo</h3>
+        <p>Ajudamos a escolher o material e acabamento ideais para sua aplicação. Experiência de 40 anos.</p>
+      </div>
+      <div class="why-card reveal d3">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3>Entrega e Instalação</h3>
+        <p>Enviamos para qualquer lugar do Brasil. No Rio de Janeiro, oferecemos instalação profissional no local.</p>
+      </div>
+      <div class="why-card reveal d4">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>Preço Justo</h3>
+        <p>Produção própria sem intermediários. Você paga pelo produto, não pela estrutura de terceiros.</p>
+      </div>
+      <div class="why-card reveal d4">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3>Desde 1985</h3>
+        <p>Mais de 40 anos atendendo a Barra da Tijuca. Milhares de projetos entregues com excelência.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="sh center">
+      <div class="tag">Perguntas frequentes</div>
+      <h2 class="section-title dark reveal">Dúvidas sobre<br>adesivos.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">Qual a diferença entre vinil e papel para adesivos?<div class="faq-icon">+</div></button>
+        <div class="faq-a">Vinil é resistente a água, sol e intempéries, sendo ideal para uso externo (veículos, vitrines, fachadas). Papel é mais acessível e indicado para uso interno (etiquetas de produtos, rótulos, organização). Ambos aceitam impressão de alta qualidade.</div>
+      </div>
+      <div class="faq-item reveal d1">
+        <button class="faq-q" onclick="toggleFaq(this)">O que é recorte eletrônico e para que serve?<div class="faq-icon">+</div></button>
+        <div class="faq-a">O recorte eletrônico usa uma plotter com lâmina de precisão para cortar o adesivo em qualquer forma personalizada. Permite criar adesivos com o contorno exato do seu logo, letras individuais, silhuetas e formas que não seriam possíveis com corte convencional.</div>
+      </div>
+      <div class="faq-item reveal d2">
+        <button class="faq-q" onclick="toggleFaq(this)">Qual o tamanho máximo de adesivo que vocês produzem?<div class="faq-icon">+</div></button>
+        <div class="faq-a">Na gráfica rápida, o tamanho máximo é 32x48cm. Para projetos maiores, usamos plotter de impressão e recorte que permite produzir adesivos de qualquer dimensão, incluindo painéis de parede inteira e plotagem de veículos.</div>
+      </div>
+      <div class="faq-item reveal d3">
+        <button class="faq-q" onclick="toggleFaq(this)">Quanto tempo dura um adesivo de vinil?<div class="faq-icon">+</div></button>
+        <div class="faq-a">Um adesivo de vinil de qualidade dura de 3 a 5 anos em uso externo, mesmo exposto a sol e chuva. Com laminação, essa durabilidade pode aumentar significativamente. Em uso interno, a durabilidade é ainda maior, podendo ultrapassar 7 anos.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <h2 class="reveal">Pronto para criar seus<br><span class="accent">adesivos?</span></h2>
+      <p class="reveal d1">Orçamento sem compromisso. Envie seu arquivo ou descreva o que precisa e respondemos em minutos.</p>
+      <div class="cta-actions reveal d2">
+        <a href="javascript:void(0)" onclick="toggleWaWidget()" class="btn-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar pelo WhatsApp
+        </a>
+        <a href="tel:+552139822777" class="btn btn-ghost">(21) 3982-2777</a>
+        <a href="mailto:mrpress@gmail.com" class="btn btn-ghost">E-mail ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo"><img src="logo.svg" alt="Mr.Press" style="height:90px;width:auto"></a>
+        <p class="footer-desc">Gráfica na Barra da Tijuca especializada em impressão digital, adesivos, banners e comunicação visual. Produção própria e qualidade premium desde 1985.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/mrpressbureau/" target="_blank" rel="noopener" class="soc-link" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/mrpressdesign/" target="_blank" rel="noopener" class="soc-link" aria-label="Facebook">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/mrpressdesign" target="_blank" rel="noopener" class="soc-link" aria-label="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="javascript:void(0)" onclick="toggleWaWidget()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="https://mrpress.com.br/impressao/">Impressão a Laser</a></li>
+          <li><a href="https://mrpress.com.br/copias/">Cópias Rápidas</a></li>
+          <li><a href="https://mrpress.com.br/adesivos/">Adesivos em Vinil</a></li>
+          <li><a href="https://mrpress.com.br/sign/">Sinalização</a></li>
+          <li><a href="https://mrpress.com.br/brindes/">Brindes Corporativos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Empresa</h5>
+        <ul>
+          <li><a href="https://mrpress.com.br/sobre/">Sobre Nós</a></li>
+          <li><a href="https://mrpress.com.br/serviços/">Serviços</a></li>
+          <li><a href="https://mrpress.com.br/orçamento/">Orçamento</a></li>
+          <li><a href="https://mrpress.com.br/fale_conosco/">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <div class="fct">
+          <span class="fct-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.48)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span>Av. das Américas, 500, Bloco 04, Loja 119<br>Shopping Downtown, Barra da Tijuca, RJ</span>
+        </div>
+        <div class="fct">
+          <span class="fct-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.48)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <a href="tel:+552139822777">(21) 3982-2777</a>
+        </div>
+        <div class="fct">
+          <span class="fct-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.48)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+          <a href="mailto:mrpress@gmail.com">mrpress@gmail.com</a>
+        </div>
+        <div class="fct">
+          <span class="fct-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.48)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <span>Seg a Sex: 9h as 18h<br>Sáb: 9h as 13h</span>
+        </div>
+        <div class="open-badge"><span class="open-dot"></span> Aberto agora</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mr.Press Gráfica. Todos os direitos reservados.</p>
+      <p>Shopping Downtown · Barra da Tijuca · Rio de Janeiro</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Chat Widget -->
+<div id="wa-widget">
+  <div id="wa-box" class="wa-box">
+    <div class="wa-header">
+      <div class="wa-header-left">
+        <div class="wa-avatar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div>
+          <div class="wa-name">Mr.Press</div>
+          <div class="wa-status"><span class="wa-online-dot"></span> Online agora</div>
+        </div>
+      </div>
+      <button class="wa-close" onclick="toggleWaWidget()" aria-label="Fechar">✕</button>
+    </div>
+    <div class="wa-body">
+      <div class="wa-bubble-wrap">
+        <div class="wa-time">Hoje</div>
+        <div class="wa-bubble">
+          <p>Ola! Bem-vindo a <strong>Mr.Press</strong>.</p>
+          <p>Quer saber mais sobre nossos adesivos personalizados?</p>
+          <span class="wa-bubble-time">agora</span>
+        </div>
+      </div>
+      <div class="wa-suggestions">
+        <button class="wa-suggest" onclick="sendWaMessage('Olá! Gostaria de um orçamento para adesivos personalizados.')">Solicitar orçamento de adesivos</button>
+        <button class="wa-suggest" onclick="sendWaMessage('Qual o prazo para adesivos personalizados?')">Prazo de entrega</button>
+        <button class="wa-suggest" onclick="sendWaMessage('Quero saber sobre recorte eletrônico')">Recorte eletrônico</button>
+      </div>
+    </div>
+    <div class="wa-footer">
+      <input type="text" id="wa-input" class="wa-input" placeholder="Digite sua mensagem..." onkeydown="if(event.key==='Enter')sendWaMessage()">
+      <button class="wa-send" onclick="sendWaMessage()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+  <button id="wa-btn" class="wa-btn" onclick="toggleWaWidget()" aria-label="Abrir chat WhatsApp">
+    <div class="wa-btn-tip">Fale conosco</div>
+    <div class="wa-btn-icon wa-icon-wa">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+    <div class="wa-btn-icon wa-icon-close" style="display:none">✕</div>
+    <span class="wa-notification">1</span>
+  </button>
+</div>
+
+<script>
+// WhatsApp Widget
+function toggleWaWidget() {
+  const box = document.getElementById('wa-box');
+  const btn = document.getElementById('wa-btn');
+  const notif = btn.querySelector('.wa-notification');
+  const iconWa = btn.querySelector('.wa-icon-wa');
+  const iconClose = btn.querySelector('.wa-icon-close');
+  const isOpen = box.classList.contains('open');
+  box.classList.toggle('open');
+  if (!isOpen) {
+    notif.style.display = 'none';
+    iconWa.style.display = 'none';
+    iconClose.style.display = 'flex';
+  } else {
+    iconWa.style.display = 'flex';
+    iconClose.style.display = 'none';
+  }
+}
+
+function sendWaMessage(preset) {
+  const input = document.getElementById('wa-input');
+  const msg = preset || input.value.trim();
+  if (!msg) return;
+  const encoded = encodeURIComponent(msg);
+  window.open(`https://wa.me/552139822777?text=${encoded}`, '_blank');
+  input.value = '';
+}
+
+// Nav scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
+
+// Mobile nav
+function toggleMobileNav() {
+  const links = document.querySelector('.nav-links');
+  const open = links.style.display === 'flex';
+  if (!open) {
+    Object.assign(links.style, { display: 'flex', flexDirection: 'column', position: 'fixed', top: '68px', left: '0', right: '0', background: 'rgba(10,10,10,.97)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', padding: '28px 32px', gap: '22px', zIndex: '99', borderBottom: '1px solid rgba(255,255,255,.06)' });
+  } else { links.style.display = 'none'; }
+}
+
+// Scroll reveal
+const ro = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } }), { threshold: .1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+// FAQ
+function toggleFaq(btn) {
+  const item = btn.parentElement, open = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!open) item.classList.add('open');
+}
+
+// Schema.org
+const s = document.createElement('script'); s.type = 'application/ld+json';
+s.textContent = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Adesivos Personalizados",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Mr.Press Gráfica na Barra da Tijuca",
+    "url": "https://mrpress.com.br",
+    "telephone": "+55-21-3982-2777",
+    "email": "mrpress@gmail.com",
+    "foundingDate": "1985",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. das Américas, 500, Bloco 04, Loja 119, Shopping Downtown",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "postalCode": "22640-102",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "13:00" }
+    ],
+    "priceRange": "$$",
+    "sameAs": ["https://www.instagram.com/mrpressbureau/", "https://www.facebook.com/mrpressdesign/", "https://www.linkedin.com/company/mrpressdesign"]
+  },
+  "serviceType": "Adesivos Personalizados",
+  "description": "Adesivos personalizados em vinil e papel para etiquetas, rótulos, vitrines, paredes, veículos e pisos. Recorte eletrônico e grandes formatos via plotter.",
+  "areaServed": {
+    "@type": "City",
+    "name": "Rio de Janeiro"
+  },
+  "url": "https://mrpress.com.br/adesivos/"
+});
+document.head.appendChild(s);
+</script>
+</body>
+</html>
