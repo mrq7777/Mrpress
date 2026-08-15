@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Mr.Press — Slideshow TV Loja</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0a0a0a; --white:#ffffff; --red:#CC0000; --red-dark:#a30000;
+  --gray-300:#c8c8c8; --gray-400:#9a9a9a; --gray-600:#555;
+  --font-display:'Syne',sans-serif; --font-body:'Inter',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-body)}
+.slide{
+  width:1920px;height:1080px;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:center;
+  background:var(--black); color:var(--white);
+}
+.bg-glow{position:absolute;border-radius:50%;filter:blur(140px);pointer-events:none}
+.glow-1{width:1100px;height:1100px;background:radial-gradient(circle,rgba(204,0,0,.32) 0%,transparent 70%);top:-380px;right:-260px}
+.glow-2{width:600px;height:600px;background:radial-gradient(circle,rgba(204,0,0,.14) 0%,transparent 70%);bottom:-200px;left:-120px}
+.grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:80px 80px}
+.content{position:relative;z-index:2;padding:0 140px}
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:24px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ff7777;margin-bottom:36px}
+.eyebrow::before{content:'';width:34px;height:3px;background:var(--red);display:block}
+.logo-mark{position:absolute;top:56px;right:70px;z-index:3;height:64px;opacity:.92}
+.footer-bar{position:absolute;bottom:0;left:0;right:0;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:34px 70px;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 100%)}
+.footer-bar .fb-left{display:flex;align-items:center;gap:14px;font-size:22px;color:rgba(255,255,255,.6);font-weight:600}
+.footer-bar .fb-dot{width:10px;height:10px;border-radius:50%;background:var(--red)}
+.footer-bar .fb-right{font-size:22px;color:rgba(255,255,255,.6);font-weight:600}
+
+/* ---- Slide 1: Abertura ---- */
+#s1 .content{text-align:center;padding:0 200px}
+#s1 .logo-big{width:640px;margin:0 auto 46px}
+#s1 h1{font-family:var(--font-display);font-size:64px;font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:26px}
+#s1 h1 .accent{color:var(--red)}
+#s1 p{font-size:30px;color:rgba(255,255,255,.55);max-width:1100px;margin:0 auto}
+#s1 .badge{display:inline-flex;align-items:center;gap:12px;margin-top:56px;background:rgba(204,0,0,.12);border:1.5px solid rgba(204,0,0,.35);border-radius:100px;padding:16px 34px;font-size:22px;font-weight:700;letter-spacing:.04em;color:#ff9a9a}
+
+/* ---- Slide 2: Institucional ---- */
+#s2 .stats-row{display:flex;gap:0;margin-top:56px}
+#s2 .stat{flex:1;text-align:center;padding:0 20px;border-right:1px solid rgba(255,255,255,.12)}
+#s2 .stat:last-child{border-right:none}
+#s2 .stat-num{font-family:var(--font-display);font-size:96px;font-weight:800;color:var(--white)}
+#s2 .stat-num .u{color:var(--red)}
+#s2 .stat-lbl{font-size:24px;color:rgba(255,255,255,.5);margin-top:10px;font-weight:500}
+#s2 h1{font-family:var(--font-display);font-size:58px;font-weight:800;text-align:center;letter-spacing:-.02em;line-height:1.15}
+#s2 h1 .accent{color:var(--red)}
+#s2 .sub{text-align:center;font-size:26px;color:rgba(255,255,255,.5);margin-top:18px}
+
+/* ---- Service slides ---- */
+.svc-slide .content{display:flex;align-items:center;gap:100px;padding:0 140px}
+.svc-slide .svc-icon-box{flex:0 0 380px;height:380px;border-radius:56px;background:rgba(204,0,0,.09);border:1.5px solid rgba(204,0,0,.25);display:flex;align-items:center;justify-content:center;font-size:190px}
+.svc-slide .svc-text{flex:1}
+.svc-slide .svc-num{font-family:var(--font-display);font-size:26px;font-weight:700;color:var(--red);letter-spacing:.14em;margin-bottom:20px}
+.svc-slide h1{font-family:var(--font-display);font-size:68px;font-weight:800;letter-spacing:-.02em;line-height:1.08;margin-bottom:28px}
+.svc-slide p{font-size:30px;color:rgba(255,255,255,.55);line-height:1.55;max-width:900px}
+.svc-slide .tags{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap}
+.svc-slide .tag-pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:100px;padding:12px 26px;font-size:22px;color:rgba(255,255,255,.75);font-weight:600}
+
+/* ---- Preços ---- */
+#s8 h1{font-family:var(--font-display);font-size:58px;font-weight:800;text-align:center;letter-spacing:-.02em;margin-bottom:14px}
+#s8 h1 .accent{color:var(--red)}
+#s8 .sub{text-align:center;font-size:26px;color:rgba(255,255,255,.5);margin-bottom:56px}
+#s8 .price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+#s8 .price-card{background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.12);border-radius:28px;padding:38px 30px;text-align:center}
+#s8 .price-icon{font-size:52px;margin-bottom:18px}
+#s8 .price-name{font-size:24px;font-weight:600;color:rgba(255,255,255,.7);margin-bottom:14px}
+#s8 .price-from{font-size:18px;color:var(--gray-400);letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#s8 .price-value{font-family:var(--font-display);font-size:52px;font-weight:800;color:var(--white);margin:6px 0}
+#s8 .price-value .cents{font-size:28px}
+#s8 .price-value .accent{color:var(--red)}
+#s8 .price-note{font-size:18px;color:var(--gray-400);margin-top:8px}
+#s8 .disclaimer{text-align:center;font-size:20px;color:rgba(255,255,255,.35);margin-top:50px}
+
+/* ---- Depoimento ---- */
+#s9 .content{text-align:center;padding:0 260px}
+#s9 .stars{font-size:44px;color:#f5a623;letter-spacing:10px;margin-bottom:44px}
+#s9 blockquote{font-family:var(--font-display);font-size:52px;font-weight:700;line-height:1.35;letter-spacing:-.01em;margin-bottom:44px}
+#s9 .author{font-size:26px;color:rgba(255,255,255,.5);font-weight:600}
+#s9 .author span{color:var(--white)}
+
+/* ---- CTA / Contato ---- */
+#s10 .content{text-align:center;padding:0 160px}
+#s10 h1{font-family:var(--font-display);font-size:66px;font-weight:800;letter-spacing:-.02em;line-height:1.1;margin-bottom:20px}
+#s10 h1 .accent{color:var(--red)}
+#s10 .contact-row{display:flex;justify-content:center;gap:64px;margin-top:64px;flex-wrap:wrap}
+#s10 .c-item{display:flex;flex-direction:column;align-items:center;gap:14px}
+#s10 .c-icon{font-size:56px}
+#s10 .c-label{font-size:22px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+#s10 .c-value{font-size:32px;font-weight:700;color:var(--white)}
+#s10 .wa-cta{display:inline-flex;align-items:center;gap:16px;margin-top:64px;background:#25D366;border-radius:100px;padding:22px 52px;font-size:30px;font-weight:700;color:var(--white)}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — Abertura -->
+<section class="slide" id="s1">
+  <div class="bg-glow glow-1"></div><div class="bg-glow glow-2"></div><div class="grid-overlay"></div>
+  <div class="content">
+    <img class="logo-big" src="../Site/logo-mrpress-branco.svg" alt="Mr.Press">
+    <h1>Sua marca merece mais<br>do que impressão.<br><span class="accent">Merece impacto.</span></h1>
+    <p>Impressão digital, adesivos, banners, sinalização e brindes corporativos — produção própria, na Barra da Tijuca.</p>
+    <div class="badge">📍 Shopping Downtown · Bloco 04, Loja 119</div>
+  </div>
+</section>
+
+<!-- SLIDE 2 — Institucional -->
+<section class="slide" id="s2">
+  <div class="bg-glow glow-1"></div><div class="bg-glow glow-2"></div><div class="grid-overlay"></div>
+  <img class="logo-mark" src="../Site/logo-mrpress-branco.svg" alt="Mr.Press">
+  <div class="content">
+    <h1>Quase <span class="accent">40 anos</span> imprimindo a Barra da Tijuca.</h1>
+    <p class="sub">Produção própria · qualidade premium · agilidade no prazo</p>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-num">40<span class="u">+</span></div><div class="stat-lbl">Anos de experiência</div></div>
+      <div class="stat"><div class="stat-num">1985</div><div class="stat-lbl">Fundada em</div></div>
+      <div class="stat"><div class="stat-num">5000<span class="u">+</span></div><div class="stat-lbl">Clientes atendidos</div></div>
+      <div class="stat"><div class="stat-num">★<span class="u">4.9</span></div><div class="stat-lbl">Avaliação no Google</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 3 — Impressão a Laser -->
+<section class="slide svc-slide" id="s3">
+  <div class="bg-glow glow-1"></div><div class="grid-overlay"></div>
+  <img class="logo-mark" src="../Site/logo-mrpress-branco.svg" alt="Mr.Press">
+  <div class="content">
+    <div class="svc-icon-box">🖨️</div>
+    <div class="svc-text">
+      <div class="svc-num">— SERVIÇO 01</div>
+      <h1>Impressão a Laser</h1>
+      <p>Alta definição em papéis diversos, frente e verso automático. Do cartão de visita ao A3, pronto em minutos.</p>
+      <div class="tags"><span class="tag-pill">⚡ Pronto em minutos</span><span class="tag-pill">🎨 Colorido ou P&B</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 4 — Adesivos -->
+<section class="slide svc-slide" id="s4">
+  <div class="bg-glow glow-1"></div><div class="grid-overlay"></div>
+  <img class="logo-mark" src="../Site/logo-mrpress-branco.svg" alt="Mr.Press">
+  <div class="content">
+    <div class="svc-icon-box">🏷️</div>
+    <div class="svc-text">
+      <div class="svc-num">— SERVIÇO 02</div>
+      <h1>Adesivos Personalizados</h1>
+      <p>Vinil e papel com recorte eletrônico de precisão. Etiquetas, rótulos, vitrines e paredes com a identidade da sua marca.</p>
+      <div class="tags"><span class="tag-pill">✂️ Corte especial</span><span class="tag-pill">💧 Laminação fosca/brilho</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 5 — Grandes Formatos -->
+<section class="slide svc-slide" id="s5">
+  <div class="bg-glow glow-1"></div><div class="grid-overlay"></div>
+  <img class="logo-mark" src="../Site/logo-mrpress-branco.svg" alt="Mr.Press">
+  <div class="content">
+    <div class="svc-icon-box">📐</div>
+    <div class="svc-text">
+      <div class="svc-num">— SERVIÇO 03</div>
+      <h1>Grandes Formatos</h1>
+      <p>Plotagem de plantas, banners e cartazes. Largura até 150cm e comprimento ilimitado, com cores vibrantes.</p>
+      <div class="tags"><span class="tag-pill">📏 Até 150cm de largura</span><span class="tag-pill">🖼️ Plotter Mimaki</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 6 — Sinalização -->
+<section class="slide svc-slide" id="s6">
+  <div class="bg-glow glow-1"></div><div class="grid-overlay"></div>
+  <img class="logo-mark" src="../Site/logo-mrpress-branco.svg" alt="Mr.Press">
+  <div class="content">
+    <div class="svc-icon-box">🪧</div>
+    <div class="svc-text">
+      <div class="svc-num">— SERVIÇO 04</div>
+      <h1>Sinalização e Banners</h1>
+      <p>Placas em PVC, acrílico, displays e comunicação visual completa para deixar sua empresa mais visível.</p>
+      <div class="tags"><span class="tag-pill">🏢 Comunicação visual</span><span class="tag-pill">🚩 Banner roll-up e X-banner</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 7 — Brindes -->
+<section class="slide svc-slide" id="s7">
+  <div class="bg-glow glow-1"></div><div class="grid-overlay"></div>
+  <img class="logo-mark" src="../Site/logo-mrpress-branco.svg" alt="Mr.Press">
+  <div class="content">
+    <div class="svc-icon-box">🎁</div>
+    <div class="svc-text">
+      <div class="svc-num">— SERVIÇO 05</div>
+      <h1>Brindes Corporativos</h1>
+      <p>Canecas, camisetas, canetas, agendas e muito mais — personalizados com a sua marca para presentear ou divulgar.</p>
+      <div class="tags"><span class="tag-pill">🎨 Personalização completa</span><span class="tag-pill">🤝 Ideal para eventos</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 8 — Preços -->
+<section class="slide" id="s8">
+  <div class="bg-glow glow-1"></div><div class="bg-glow glow-2"></div><div class="grid-overlay"></div>
+  <img class="logo-mark" src="../Site/logo-mrpress-branco.svg" alt="Mr.Press">
+  <div class="content">
+    <h1>Preços que cabem no seu <span class="accent">orçamento</span></h1>
+    <p class="sub">Valores a partir de — consulte condições na loja</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price-icon">💳</div>
+        <div class="price-name">Cartão de visita</div>
+        <div class="price-from">A partir de</div>
+        <div class="price-value">R$<span class="cents">120</span></div>
+        <div class="price-note">100 unidades</div>
+      </div>
+      <div class="price-card">
+        <div class="price-icon">📄</div>
+        <div class="price-name">Flyer 10x15cm</div>
+        <div class="price-from">A partir de</div>
+        <div class="price-value">R$<span class="cents">260</span></div>
+        <div class="price-note">500 unidades</div>
+      </div>
+      <div class="price-card">
+        <div class="price-icon">🏷️</div>
+        <div class="price-name">Adesivo vinil A4</div>
+        <div class="price-from">A partir de</div>
+        <div class="price-value">R$<span class="cents">40</span></div>
+        <div class="price-note">unidade</div>
+      </div>
+      <div class="price-card">
+        <div class="price-icon">📎</div>
+        <div class="price-name">Plastificação A4</div>
+        <div class="price-from">A partir de</div>
+        <div class="price-value">R$<span class="cents">9</span></div>
+        <div class="price-note">unidade</div>
+      </div>
+    </div>
+    <div class="disclaimer">Valores sujeitos a alteração sem aviso prévio. Confirme com nossa equipe.</div>
+  </div>
+</section>
+
+<!-- SLIDE 9 — Depoimento -->
+<section class="slide" id="s9">
+  <div class="bg-glow glow-1"></div><div class="bg-glow glow-2"></div><div class="grid-overlay"></div>
+  <img class="logo-mark" src="../Site/logo-mrpress-branco.svg" alt="Mr.Press">
+  <div class="content">
+    <div class="stars">★★★★★</div>
+    <blockquote>"Super recomendo! Fui atendida pelo Pedro e ele além de resolver tudo ainda foi super simpático e atencioso. A impressão ficou ótima!"</blockquote>
+    <div class="author"><span>Flavia Vianna</span> — avaliação no Google</div>
+  </div>
+</section>
+
+<!-- SLIDE 10 — CTA / Contato -->
+<section class="slide" id="s10">
+  <div class="bg-glow glow-1"></div><div class="bg-glow glow-2"></div><div class="grid-overlay"></div>
+  <div class="content">
+    <h1>Pronto para levar sua marca<br>ao <span class="accent">próximo nível?</span></h1>
+    <div class="contact-row">
+      <div class="c-item"><div class="c-icon">📍</div><div class="c-label">Endereço</div><div class="c-value">Shopping Downtown<br>Bloco 04, Loja 119</div></div>
+      <div class="c-item"><div class="c-icon">📞</div><div class="c-label">Telefone</div><div class="c-value">(21) 3982-2777</div></div>
+      <div class="c-item"><div class="c-icon">🕐</div><div class="c-label">Horário</div><div class="c-value">Seg–Sex 9h–18h<br>Sáb 9h–13h</div></div>
+    </div>
+    <div class="wa-cta">💬 Fale pelo WhatsApp (21) 3982-2777</div>
+  </div>
+</section>
+
+</body>
+</html>
